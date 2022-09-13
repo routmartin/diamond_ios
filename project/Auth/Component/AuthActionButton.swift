@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginButton: UIView {
+class AuthActionButton: UIView {
     
     let loginbutton: UIButton = {
         let loginbutton = UIButton()

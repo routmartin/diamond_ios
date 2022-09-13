@@ -29,7 +29,7 @@ class LoginVC: UIViewController {
     let scrollView = UIScrollView()
     let ivPhoneNumber = PhoneNumberView()
     let ivPassword = PasswordView()
-    let btnLogin = LoginButton()
+    let btnLogin = AuthActionButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,19 +83,17 @@ class LoginVC: UIViewController {
         
         scrollView.addSubview(btnLogin)
         btnLogin.translatesAutoresizingMaskIntoConstraints = false
-        btnLogin.topAnchor.constraint(equalTo: forgetPass.bottomAnchor,constant: 20).isActive = true
-        btnLogin.leftAnchor.constraint(equalTo: view.leftAnchor,constant: 16).isActive = true
-        btnLogin.rightAnchor.constraint(equalTo: view.rightAnchor,constant: -16).isActive = true
-        btnLogin.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
+        btnLogin.leftAnchor.constraint(equalTo: scrollView.leftAnchor,constant: 16).isActive = true
+        btnLogin.rightAnchor.constraint(equalTo: scrollView.rightAnchor,constant: -16).isActive = true
+        btnLogin.topAnchor.constraint(equalTo: view.topAnchor,constant: -225).isActive = true
         btnLogin.loginbutton.addTarget(self, action: #selector(navigateToRegister), for: .touchUpInside)
         
-        
+
         
     }
     
     
     @objc func navigateToRegister() {
-        
         navigationController?.pushViewController(FrogetPassViewController(), animated:true)
     }
     

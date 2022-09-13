@@ -8,6 +8,7 @@
 import UIKit
 
 class PasswordView: UIView {
+    
  
     
     let password: UITextField={

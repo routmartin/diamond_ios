@@ -8,12 +8,22 @@
 import UIKit
 
 class FrogetPassViewController: UIViewController {
+    let btnAuthActoin : AuthActionButton = {
+        let btnAuth = AuthActionButton()
+        btnAuth.loginbutton.setTitle("NEXT", for: .normal)
+        return btnAuth
+    }()
+    
+    
+
+    
+    
     let header : UILabel = {
     let txt = UILabel()
     txt.text = "Enter your phone number"
         txt.textColor = .black
-        txt.font = .systemFont(ofSize: 28)
-        txt.font = UIFont.boldSystemFont(ofSize: 14)
+        
+        txt.font = UIFont.boldSystemFont(ofSize: 28)
         
         return txt;
     }()
@@ -46,13 +56,24 @@ class FrogetPassViewController: UIViewController {
         
         scrollView.addSubview(ivPassword)
         ivPassword.translatesAutoresizingMaskIntoConstraints = false
-        ivPassword.topAnchor.constraint(equalTo: header.bottomAnchor,constant: 12).isActive=true
+        ivPassword.topAnchor.constraint(equalTo: header.bottomAnchor,constant: 60).isActive=true
         ivPassword.leftAnchor.constraint(equalTo: view.leftAnchor,constant: 16).isActive = true
         ivPassword.rightAnchor.constraint(equalTo: view.rightAnchor,constant: -16).isActive = true
         ivPassword.heightAnchor.constraint(equalToConstant: 60).isActive = true
         
         
-         
+        scrollView.addSubview(btnAuthActoin)
+        btnAuthActoin.translatesAutoresizingMaskIntoConstraints = false
+        btnAuthActoin.leftAnchor.constraint(equalTo: view.leftAnchor,constant: 16).isActive = true
+        btnAuthActoin.rightAnchor.constraint(equalTo: view.rightAnchor,constant: -16).isActive = true
+        btnAuthActoin.bottomAnchor.constraint(equalTo: view.bottomAnchor,constant: -225).isActive = true
+                
+                
     }
+    
+    @objc func navigateToRoot() {
+        navigationController?.pushViewController(FrogetPassViewController(), animated:true)
+    }
+    
     
 }
