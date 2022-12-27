@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RowStackViewData: UIStackView {
+class RowStacViewUpgradeGroup: UIStackView {
     
     let updateStackView: TitleStackView = {
         let stackView = TitleStackView()

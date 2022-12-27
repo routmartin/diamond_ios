@@ -2,9 +2,9 @@
 
 import UIKit
 
-class PendingApprovalTableViewCell: UITableViewCell {
+class RequestDiscountTableViewCell: UITableViewCell {
     
-    static let cellIdentifier = "PendingApprovalTableViewCell"
+    static let cellIdentifier = "RequestDiscountTableViewCell"
     
     
     let requestDiscount: ReqeustDiscount = {

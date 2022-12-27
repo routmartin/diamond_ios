@@ -62,8 +62,8 @@ class ReqeustDiscount: UIView {
         return image
     }()
     
-    let rowStackview: RowStackViewData = {
-        let rowstackView = RowStackViewData()
+    let rowStackview: RowStacViewUpgradeGroup = {
+        let rowstackView = RowStacViewUpgradeGroup()
        return rowstackView
     }()
     let actionButton: ActionButtonStackView = {

@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5227129C295A1FFB0084FD90 /* RowStackViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227129B295A1FFB0084FD90 /* RowStackViewData.swift */; };
+		5227129E295A24C60084FD90 /* ActionButtonStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227129D295A24C60084FD90 /* ActionButtonStackView.swift */; };
+		522712A1295A5E990084FD90 /* ReqeustDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522712A0295A5E990084FD90 /* ReqeustDiscount.swift */; };
+		522712A3295A60500084FD90 /* RequestUpgradeGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522712A2295A60500084FD90 /* RequestUpgradeGroup.swift */; };
+		522712A6295A626A0084FD90 /* RowStackViewDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522712A5295A626A0084FD90 /* RowStackViewDiscount.swift */; };
+		522712A8295A64180084FD90 /* RequestGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522712A7295A64180084FD90 /* RequestGroupTableViewCell.swift */; };
+		522712AA295A78F50084FD90 /* PendingApproval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522712A9295A78F50084FD90 /* PendingApproval.swift */; };
+		522712AD295A79AB0084FD90 /* RequestTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522712AC295A79AB0084FD90 /* RequestTableView.swift */; };
+		522712AF295A7ECE0084FD90 /* TotalFilterStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522712AE295A7ECE0084FD90 /* TotalFilterStackView.swift */; };
+		52EEF2DA29562541006723A4 /* RequestDiscountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF2D929562541006723A4 /* RequestDiscountTableViewCell.swift */; };
+		52F98CD12957843F005E1700 /* TitleStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F98CD02957843F005E1700 /* TitleStackView.swift */; };
 		631385AF28CF2C80007391E5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631385AE28CF2C80007391E5 /* TabBarController.swift */; };
 		631385B828CF31D3007391E5 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631385B728CF31D3007391E5 /* HomePageViewController.swift */; };
 		631385BA28CF31EF007391E5 /* ARPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631385B928CF31EF007391E5 /* ARPageViewController.swift */; };
@@ -26,6 +37,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5227129B295A1FFB0084FD90 /* RowStackViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowStackViewData.swift; sourceTree = "<group>"; };
+		5227129D295A24C60084FD90 /* ActionButtonStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonStackView.swift; sourceTree = "<group>"; };
+		522712A0295A5E990084FD90 /* ReqeustDiscount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqeustDiscount.swift; sourceTree = "<group>"; };
+		522712A2295A60500084FD90 /* RequestUpgradeGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestUpgradeGroup.swift; sourceTree = "<group>"; };
+		522712A5295A626A0084FD90 /* RowStackViewDiscount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowStackViewDiscount.swift; sourceTree = "<group>"; };
+		522712A7295A64180084FD90 /* RequestGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGroupTableViewCell.swift; sourceTree = "<group>"; };
+		522712A9295A78F50084FD90 /* PendingApproval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingApproval.swift; sourceTree = "<group>"; };
+		522712AC295A79AB0084FD90 /* RequestTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableView.swift; sourceTree = "<group>"; };
+		522712AE295A7ECE0084FD90 /* TotalFilterStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalFilterStackView.swift; sourceTree = "<group>"; };
+		52EEF2D929562541006723A4 /* RequestDiscountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDiscountTableViewCell.swift; sourceTree = "<group>"; };
+		52F98CD02957843F005E1700 /* TitleStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleStackView.swift; sourceTree = "<group>"; };
 		631385AE28CF2C80007391E5 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		631385B728CF31D3007391E5 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		631385B928CF31EF007391E5 /* ARPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPageViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +79,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5227129F295A5E5C0084FD90 /* ReqeustDiscountCard */ = {
+			isa = PBXGroup;
+			children = (
+				522712A0295A5E990084FD90 /* ReqeustDiscount.swift */,
+				522712A5295A626A0084FD90 /* RowStackViewDiscount.swift */,
+			);
+			path = ReqeustDiscountCard;
+			sourceTree = "<group>";
+		};
+		522712A4295A61A50084FD90 /* RequestUpgradGroup */ = {
+			isa = PBXGroup;
+			children = (
+				522712A2295A60500084FD90 /* RequestUpgradeGroup.swift */,
+				5227129B295A1FFB0084FD90 /* RowStackViewData.swift */,
+			);
+			path = RequestUpgradGroup;
+			sourceTree = "<group>";
+		};
+		522712AB295A79570084FD90 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				522712AC295A79AB0084FD90 /* RequestTableView.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		52F98CCF29578416005E1700 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				522712AB295A79570084FD90 /* TableView */,
+				522712A4295A61A50084FD90 /* RequestUpgradGroup */,
+				5227129F295A5E5C0084FD90 /* ReqeustDiscountCard */,
+				52F98CD02957843F005E1700 /* TitleStackView.swift */,
+				5227129D295A24C60084FD90 /* ActionButtonStackView.swift */,
+				522712A9295A78F50084FD90 /* PendingApproval.swift */,
+				522712AE295A7ECE0084FD90 /* TotalFilterStackView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		631385AD28CF2AE6007391E5 /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +155,10 @@
 		631385B328CF2FD8007391E5 /* PendingApprove */ = {
 			isa = PBXGroup;
 			children = (
+				52F98CCF29578416005E1700 /* Component */,
 				631385BD28CF322A007391E5 /* PendingApproveViewController.swift */,
+				52EEF2D929562541006723A4 /* RequestDiscountTableViewCell.swift */,
+				522712A7295A64180084FD90 /* RequestGroupTableViewCell.swift */,
 			);
 			path = PendingApprove;
 			sourceTree = "<group>";
@@ -240,19 +305,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522712AA295A78F50084FD90 /* PendingApproval.swift in Sources */,
 				63E08B1628D08D38003A4F60 /* NotificationTableViewCell.swift in Sources */,
 				631385BC28CF3210007391E5 /* NotificationViewController.swift in Sources */,
+				522712A1295A5E990084FD90 /* ReqeustDiscount.swift in Sources */,
 				6389145928AF7AD800301765 /* LoginViewController.swift in Sources */,
 				635A230228B37E3C00AF2036 /* AuthActionButton.swift in Sources */,
+				5227129C295A1FFB0084FD90 /* RowStackViewData.swift in Sources */,
+				522712AD295A79AB0084FD90 /* RequestTableView.swift in Sources */,
 				63BF321128B4CB65003C94FA /* ForgetPassViewController.swift in Sources */,
+				522712A6295A626A0084FD90 /* RowStackViewDiscount.swift in Sources */,
+				522712A8295A64180084FD90 /* RequestGroupTableViewCell.swift in Sources */,
 				631385BE28CF322A007391E5 /* PendingApproveViewController.swift in Sources */,
 				6389145B28AF886400301765 /* PhoneNumberView.swift in Sources */,
+				52F98CD12957843F005E1700 /* TitleStackView.swift in Sources */,
 				631385B828CF31D3007391E5 /* HomePageViewController.swift in Sources */,
+				5227129E295A24C60084FD90 /* ActionButtonStackView.swift in Sources */,
+				522712AF295A7ECE0084FD90 /* TotalFilterStackView.swift in Sources */,
 				631385AF28CF2C80007391E5 /* TabBarController.swift in Sources */,
 				63E08B1928D08EE6003A4F60 /* UIColor.swift in Sources */,
 				6389145E28AF9DED00301765 /* PasswordView.swift in Sources */,
 				63ABEB5628AF693B002DB46B /* AppDelegate.swift in Sources */,
+				52EEF2DA29562541006723A4 /* RequestDiscountTableViewCell.swift in Sources */,
 				631385BA28CF31EF007391E5 /* ARPageViewController.swift in Sources */,
+				522712A3295A60500084FD90 /* RequestUpgradeGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

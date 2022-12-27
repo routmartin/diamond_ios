@@ -8,16 +8,31 @@
 import UIKit
 
 class RequestGroupTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    static let cellIdentifier = "RequestGroupTableViewCell"
+    
+    
+    let requestDiscount: RequestUpgradeGroup = {
+        let card = RequestUpgradeGroup()
+        return card
+    }()
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+    addSubview(requestDiscount)
+        requestDiscount.translatesAutoresizingMaskIntoConstraints = false
+        requestDiscount.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+        requestDiscount.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+        requestDiscount.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        requestDiscount.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+    
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
+    
+   
 
 }

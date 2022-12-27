@@ -8,11 +8,16 @@
 import UIKit
 
 class NotificationTableViewCell: UITableViewCell {
+    
+    
+    static let cellIdentifier = "NotificationTableViewCell"
      
     
     let image: UIImageView = {
         let image =  UIImageView()
-        image.image = UIImage(named: "icon_notifcation")
+        image.image = UIImage(systemName: "person.circle.fill")
+        image.tintColor = .gray
+
         return image
     }()
     
@@ -83,10 +88,6 @@ class NotificationTableViewCell: UITableViewCell {
         time.rightAnchor.constraint(equalTo: rightAnchor,constant: -20).isActive = true
         time.topAnchor.constraint(equalTo: date.topAnchor,constant: 20).isActive = true
        
-        
-    
-        
-        
     }
     
     
