@@ -57,7 +57,6 @@ class TitleStackView: UIStackView {
     func bindUpdateLabel(title: String, font: UIFont = .systemFont(ofSize: 14, weight: .medium)) {
         txtTitle.text = title
         txtTitle.font = font
-        
     }
     
 }

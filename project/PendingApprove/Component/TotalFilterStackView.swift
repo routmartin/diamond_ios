@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TotalFilterStackView: UIStackView {
+class TotalFilterStackView: UIStackView{
     
     var bindTotalRecond: String = "" {
         didSet {
@@ -25,32 +25,33 @@ class TotalFilterStackView: UIStackView {
         return txt
     }()
     
-
+    
     let filterTextButton: UIButton = {
         let textButton = UIButton()
-        textButton.setTitle("Filter", for: .normal)
-        textButton.tintColor = .black
-        textButton.setImage(UIImage(named: "line.3.horizontal.decrease.circle"), for: .normal)
+        textButton.backgroundColor = .white
+        textButton.setImage(UIImage(systemName: "arrow.down.right.and.arrow.up.left"), for: .normal)
+        textButton.tintColor = .darkGray
         
         return textButton
     }()
     
     
     
-    
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        axis  = .horizontal
-        distribution  = .fillEqually
-        alignment = .center
-        spacing   = 6
         
+        
+        filterTextButton.translatesAutoresizingMaskIntoConstraints = false
+        filterTextButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
     
+        
+        alignment = .fill
+        axis = .horizontal
+        distribution = .fillProportionally
+        spacing = 8.0
+        
         addArrangedSubview(totalRecond)
-//        addArrangedSubview(filterTextButton)
-        
-        
+        addArrangedSubview(filterTextButton)
         
         
     }
@@ -59,5 +60,7 @@ class TotalFilterStackView: UIStackView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
 
 }
+

@@ -18,9 +18,9 @@ class PendingApproveViewController: UIViewController {
         return table
     }()
     
-    var historyTableView: ReqeustUITableView = {
-        let table = ReqeustUITableView()
-        return table
+    var historyTableView: HistoryViewTableView = {
+        let historyView = HistoryViewTableView()
+        return historyView
     }()
     
     let totalRecond: TotalFilterStackView = {
@@ -44,7 +44,6 @@ class PendingApproveViewController: UIViewController {
         totalRecond.topAnchor.constraint(equalTo: segmentView.bottomAnchor, constant: 20).isActive = true
         totalRecond.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 24).isActive = true
         totalRecond.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        
         
 
         
@@ -83,8 +82,8 @@ class PendingApproveViewController: UIViewController {
         segmentView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
         segmentView.heightAnchor.constraint(equalToConstant:35).isActive = true
         
-        showView(index: 1)
-        segmentView.selectedSegmentIndex = 1
+        showView(index: 0)
+        segmentView.selectedSegmentIndex = 0
     
         
     }
@@ -99,11 +98,13 @@ class PendingApproveViewController: UIViewController {
         case 0:
             reqeustTableView.isHidden = false
             historyTableView.isHidden = true
-            
+            totalRecond.isHidden = false
+        
             break
         case 1:
             reqeustTableView.isHidden = true
             historyTableView.isHidden = false
+            totalRecond.isHidden = true
             break
         default:
             break

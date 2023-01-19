@@ -26,7 +26,7 @@ class NotificationTableViewCell: UITableViewCell {
         let txt = UILabel()
         txt.text = "Request to VVIP"
         txt.textColor = UIColor.init(hexString: "#3A3A3C")
-        txt.font = UIFont.boldSystemFont(ofSize: 20)
+        txt.font = UIFont.boldSystemFont(ofSize: 16)
         return txt
     }()
     
@@ -34,7 +34,7 @@ class NotificationTableViewCell: UITableViewCell {
         let txt = UILabel()
         txt.text = "Jonhny No. 23456789"
         txt.textColor = UIColor.init(hexString: "#979797")
-        txt.font = UIFont.boldSystemFont(ofSize: 12)
+        txt.font = UIFont.systemFont(ofSize: 12)
         return txt
     }()
     
@@ -75,7 +75,7 @@ class NotificationTableViewCell: UITableViewCell {
         addSubview(subTitle)
         subTitle.translatesAutoresizingMaskIntoConstraints = false
         subTitle.leftAnchor.constraint(equalTo: image.rightAnchor,constant: 20).isActive = true
-        subTitle.bottomAnchor.constraint(equalTo: bottomAnchor,constant: -20).isActive = true
+        subTitle.topAnchor.constraint(equalTo: title.topAnchor,constant:24).isActive = true
         
         
         addSubview(date)

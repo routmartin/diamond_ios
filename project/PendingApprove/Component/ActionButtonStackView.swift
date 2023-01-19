@@ -15,8 +15,8 @@ class ActionButtonStackView: UIStackView {
         button.titleLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
         button.setTitleColor(UIColor(hexString: "#F8B400"), for: .normal)
         button.layer.borderColor = UIColor(hexString: "#F8B400").cgColor
-        button.layer.borderWidth = 2
-        button.layer.cornerRadius = 12
+        button.layer.borderWidth = 1.5
+        button.layer.cornerRadius = 8
         button.layer.cornerCurve = .continuous
         
         button.heightAnchor.constraint(equalToConstant: 40).isActive = true
@@ -35,7 +35,7 @@ class ActionButtonStackView: UIStackView {
         button.backgroundColor = UIColor(hexString: "#F8B400")
         
         button.layer.borderWidth = 2
-        button.layer.cornerRadius = 12
+        button.layer.cornerRadius = 8
         button.layer.borderColor = UIColor(hexString: "#F8B400").cgColor
         button.layer.cornerCurve = .continuous
         
@@ -53,8 +53,6 @@ class ActionButtonStackView: UIStackView {
         axis = .horizontal
         distribution = .fillProportionally
         spacing = 10
-        
-        
         
         addArrangedSubview(declinedButton)
         addArrangedSubview(approvedButton)
